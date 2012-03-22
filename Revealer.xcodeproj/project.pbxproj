@@ -10,6 +10,9 @@
 		EA1E7C7513C7DF8500475866 /* statusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA1E7C7413C7DF8500475866 /* statusIcon.png */; };
 		EA1E7C7813C7DF9600475866 /* alternateStatusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA1E7C7713C7DF9600475866 /* alternateStatusIcon.png */; };
 		EA43A50013C7D332002E1DBE /* File-Revealer.icns in Resources */ = {isa = PBXBuildFile; fileRef = EA43A4FF13C7D332002E1DBE /* File-Revealer.icns */; };
+		EA5BD4DF151AAB1200A2740A /* interface.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5BD4DE151AAB1200A2740A /* interface.png */; };
+		EA5BD4E6151ABC0500A2740A /* VV_InterfaceLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5BD4E5151ABC0400A2740A /* VV_InterfaceLayerView.m */; };
+		EA5BD4E8151AE45600A2740A /* interface2.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5BD4E7151AE45600A2740A /* interface2.png */; };
 		EA7B216A13C4EDAA00D7584D /* NBYesNoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7B216913C4EDA900D7584D /* NBYesNoButton.m */; };
 		EA7B216E13C50F3A00D7584D /* NBCAYNCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7B216D13C50F3A00D7584D /* NBCAYNCell.m */; };
 		EA7B217213C5130A00D7584D /* Base.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7B216F13C5130A00D7584D /* Base.png */; };
@@ -38,6 +41,10 @@
 		EA1E7C7413C7DF8500475866 /* statusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusIcon.png; sourceTree = "<group>"; };
 		EA1E7C7713C7DF9600475866 /* alternateStatusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alternateStatusIcon.png; sourceTree = "<group>"; };
 		EA43A4FF13C7D332002E1DBE /* File-Revealer.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "File-Revealer.icns"; sourceTree = "<group>"; };
+		EA5BD4DE151AAB1200A2740A /* interface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = interface.png; sourceTree = "<group>"; };
+		EA5BD4E4151ABC0400A2740A /* VV_InterfaceLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VV_InterfaceLayerView.h; sourceTree = "<group>"; };
+		EA5BD4E5151ABC0400A2740A /* VV_InterfaceLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VV_InterfaceLayerView.m; sourceTree = "<group>"; };
+		EA5BD4E7151AE45600A2740A /* interface2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = interface2.png; sourceTree = "<group>"; };
 		EA7B216813C4EDA900D7584D /* NBYesNoButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBYesNoButton.h; sourceTree = "<group>"; };
 		EA7B216913C4EDA900D7584D /* NBYesNoButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBYesNoButton.m; sourceTree = "<group>"; };
 		EA7B216C13C50F3A00D7584D /* NBCAYNCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBCAYNCell.h; sourceTree = "<group>"; };
@@ -117,6 +124,8 @@
 			children = (
 				EA7D15BD14EA064E0037DD1C /* VV_InterfaceBackgroundView.h */,
 				EA7D15BE14EA064E0037DD1C /* VV_InterfaceBackgroundView.m */,
+				EA5BD4E4151ABC0400A2740A /* VV_InterfaceLayerView.h */,
+				EA5BD4E5151ABC0400A2740A /* VV_InterfaceLayerView.m */,
 				EA7D15BA14EA06430037DD1C /* VV_Interface.h */,
 				EA7D15BB14EA06430037DD1C /* VV_Interface.m */,
 				EA7D15B514EA045D0037DD1C /* VV_StatusItemView.h */,
@@ -183,6 +192,8 @@
 		EAD08CCF13C2889C00756C40 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EA5BD4E7151AE45600A2740A /* interface2.png */,
+				EA5BD4DE151AAB1200A2740A /* interface.png */,
 				EA7B216B13C50F0A00D7584D /* Decrepated */,
 				EA7B216013C4E2C600D7584D /* Animations */,
 				EA9D099013C2EA5500F175CF /* prompt.png */,
@@ -271,6 +282,8 @@
 				EA43A50013C7D332002E1DBE /* File-Revealer.icns in Resources */,
 				EA1E7C7513C7DF8500475866 /* statusIcon.png in Resources */,
 				EA1E7C7813C7DF9600475866 /* alternateStatusIcon.png in Resources */,
+				EA5BD4DF151AAB1200A2740A /* interface.png in Resources */,
+				EA5BD4E8151AE45600A2740A /* interface2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +304,7 @@
 				EA7D15B714EA045D0037DD1C /* VV_StatusItemView.m in Sources */,
 				EA7D15BC14EA06430037DD1C /* VV_Interface.m in Sources */,
 				EA7D15BF14EA064E0037DD1C /* VV_InterfaceBackgroundView.m in Sources */,
+				EA5BD4E6151ABC0500A2740A /* VV_InterfaceLayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

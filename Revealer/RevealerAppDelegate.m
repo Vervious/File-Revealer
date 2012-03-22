@@ -77,6 +77,11 @@
     [self setHasActiveInterface:NO];
 }
 
+- (void)windowDidResignMain:(NSNotification *)notification {
+    // resign Key and close interface
+    [self setHasActiveInterface:NO];
+}
+
 
 #pragma mark no window only status bar 
 

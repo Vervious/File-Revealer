@@ -162,6 +162,13 @@ nano8blazex
 
 1456
 
+VV_InterfaceLayerView.h
+file
+0
+
+
+add
+
 Base.png
 file
 
@@ -197,6 +204,13 @@ has-props
 4031
 
 VV_StatusItemView.h
+file
+0
+
+
+add
+
+VV_InterfaceLayerView.m
 file
 0
 
@@ -495,6 +509,20 @@ has-props
 
 
 2077
+
+interface.png
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
 
 RevealerAppDelegate.h
 file
@@ -920,6 +948,20 @@ nano8blazex
 
 
 5850
+
+interface2.png
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
 
 Constants.m
 file

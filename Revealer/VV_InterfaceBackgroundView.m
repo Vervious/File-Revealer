@@ -8,6 +8,9 @@
 
 #import "VV_InterfaceBackgroundView.h"
 
+// we will use CALayers to draw so that z-positions aren't messed up
+// but we will use NSViews at the same time
+
 
 // interface view specifics
 #define FILL_OPACITY .95
@@ -24,7 +27,24 @@
 
 @implementation VV_InterfaceBackgroundView
 
-@synthesize arrowXLocation;
+@synthesize arrowXLocation, layerView;
+
+
+#pragma mark CALayers
+
+- (CALayer *)newRootLayer {
+    CALayer *rootLayer = [CALayer layer];
+    return rootLayer;
+}
+
+
+- (CALayer *)prepareAndReturnRootLayer {
+    CALayer *rootLayer = [self newRootLayer];
+    rootLayer.masksToBounds = NO;
+    return rootLayer;
+}
+
+#pragma mark initializationa and drawing
 
 - (id)initWithFrame:(NSRect)frame
 {

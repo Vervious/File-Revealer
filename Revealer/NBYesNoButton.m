@@ -14,13 +14,22 @@
 
 @implementation NBYesNoButton
 @synthesize mobileView, decoView;
+
+- (void)awakeFromNib {
+    // now set decoView to have a blending mode of "overlay" (making sure 200%)
+    
+    CIFilter *overlay = [CIFilter filterWithName:@"CIOverlayBlendMode" 
+                                   keysAndValues:nil];;
+    [[decoView layer] setCompositingFilter:overlay ];
+}
+
 - (id)init
 {
     self = [super init];
     if (self) {
         // Initialization code here.
         [self setBordered:NO];
-        [self setWantsLayer:YES];
+        [self setWantsLayer:YES]; //this screws up the overlay fro some reason
         NSRect subviewRect = [self frame];
         subviewRect.origin = NSMakePoint(0, -1);
         mobileView = [[NBYesNoSecondaryView alloc] initWithFrame:subviewRect];
@@ -31,12 +40,14 @@
         [decoView setCell:[self cell]];
         [decoView setName:@"decoView"];
         [self addSubview:decoView];
+        [decoView setWantsLayer:YES];
         
         // now set decoView to have a blending mode of "overlay"
         
         CIFilter *overlay = [CIFilter filterWithName:@"CIOverlayBlendMode" 
                                        keysAndValues:nil];;
         [[decoView layer] setCompositingFilter:overlay ];
+        
     }
     
     return self;
@@ -70,12 +81,14 @@
         [decoView setCell:[self cell]];
         [decoView setName:@"decoView"];
         [self addSubview:decoView];
+        [decoView setWantsLayer:YES];
         
         // now set decoView to have a blending mode of "overlay"
         
         CIFilter *overlay = [CIFilter filterWithName:@"CIOverlayBlendMode" 
                                        keysAndValues:nil];;
         [[decoView layer] setCompositingFilter:overlay ];
+        
 
     }
     
